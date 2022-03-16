@@ -1,10 +1,34 @@
-const countword = () => {
-    let characters = document.getElementById('character').value.length;
+const button = document.querySelector(".btn");
+const count = document.querySelector(".counter")
+const character = document.querySelector(".text");
+const show = document.querySelector(".sentence");
+let words = "";
 
-    let word = document.getElementById('character').value;
-    document.getElementById('allcharacter').innerHTML = characters;
 
-    word = word.match(/\w+/g);
-    word = word.length;
-    document.getElementById('allcharacter').innerHTML = word;
+
+let myFunc = () => {
+    let func = character.value;
+    let arr = func.split(/\s/)
+    let sent = ""
+    let counter = 0;
+    for ( let i = 0; i < arr.length; i++){
+        const array = arr[i];
+        if (array.length >= 5){
+                 
+                sent += `<mark style="background-color: #f72585;" >
+                
+                 ${array}
+             </mark> `
+            }
+        else {
+            sent+= array + ' '
+            counter ++
+        }
+
+    }
+    console.log(sent);
+    show.innerHTML = sent;
+    count.innerHTML = "Word count: " + arr.length;
 }
+
+button.addEventListener('click', myFunc)

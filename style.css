@@ -1,10 +1,29 @@
 body {
-    background-color: #003566;
+    background-color: #fcd5ce;
     font-family: cursive;
+    position: center;
 }
 h1 {
-    color:#ffc300;
+    color:#bb3e03;
 }
-.word {
+.btn {
     color:#f72585;
+    background-color: #283618;
+    block-size: 2cm;
+    font-family:cursive;
+    font-size: 20px; 
+    width: 5%;
+    
+}
+.text {
+    background-color:#ffe5d9;
+    block-size: 2cm;
+    font-family:cursive;
+    font-size: 20px; 
+    width: 20%;
+}
+.counter {
+    color:#ca6702;
+    font-size: 20px; 
+    font-family:cursive;
 }

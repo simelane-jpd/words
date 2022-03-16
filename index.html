@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        
-        <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   
 </head>
 <body>
-        <h1>Words widget</h1>
-        <div class="container">
-                
-                <div style="color:#56cfe1;">Enter a sentence of 5 or more words</div>
-                
-                <textarea id="character" cols="20" rows="5" placeholder="Type word"></textarea>
-                <button type="submit" onclick="countword()">Click</button>
-                
-        </div>
-        <div class="word">
-                <h4>word count</h4>
-                <P id="allcharacter"></P>
+    <div class='container'>
 
-                
-        </div>
-        
+
+    <h1>Words widget</h1>
+    <div style="color:#9c6644;">Enter a sentence of 5 or more words</div>
+    <input type="text" placeholder="Type word"class="text" id="text">
+    <button type="button" class="btn" id="btn">Click</button>
+    <div class="sentence"></div>
+
+    <div class="counter"></div>
+</div>
+   
 </body>
 <script src="index.js"></script>
 </html>
