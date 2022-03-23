@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-   
+
+
 </head>
+
 <body>
-    <div class='container'>
+    <div class="main container">
+
+        <h1>Words widget</h1>
+        <div style="color:#9c6644;">Enter a sentence of 5 or more words</div>
+        <input type="text" placeholder="Type words" class="text" id="analyzebtn">
+        <button type="button" class="btn" id="btn">Analyse</button>
 
 
-    <h1>Words widget</h1>
-    <div style="color:#9c6644;">Enter a sentence of 5 or more words</div>
-    <input type="text" placeholder="Type words"class="text" id="text">
-    <button type="button" class="btn" id="btn">Analyse</button>
-    <div class="sentence"></div>
-    <div class="counter"></div>
+        <div style="color:#9c6644;">
+            <input type="checkbox" class="checkbox">
+            <label for="vehicle1"> Hide words shorter than 5 characters</label>
 
-    <div style="color:#9c6644;">
-        <input type="checkbox" class="tick">
-        <label for="checkbox">Hide words shorter than 5 characters</label>
-      
-    </div>   
-    <div>
+        </div>
+        <div class="messages"></div>
+        <div class="colorBox" id="desk"></div>
+        <div class="message"></div>
+    </div>
+    </div>
 
-        <button  class="longest">Longest word</button>
-    </div>  
+    <script src="index.js"></script>
+    <script src="factory.js"></script>
     
-</div>
-   
 </body>
-<script src="index.js"></script>
+
 </html>
