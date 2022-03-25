@@ -1,10 +1,12 @@
 body {
     background-color: #fcd5ce;
     font-family: cursive;
-    position: center;
+    text-align: center;
+    
 }
 h1 {
     color:#bb3e03;
+    
 }
 .btn {
     color:#f72585;
@@ -20,7 +22,7 @@ h1 {
     block-size: 2cm;
     font-family:cursive;
     font-size: 20px; 
-    width: 30%;
+    width: 40%;
     
 }
 .counter, .longest {
@@ -33,4 +35,9 @@ h1 {
 
 .hidden{
     display: none;
+}
+
+.sentencesentered {
+    font-family: cursive;
+    font-size: 20px; 
 }
