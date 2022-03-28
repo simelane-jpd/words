@@ -1,3 +1,4 @@
+//const repeat = document.querySelector(".repeat")
 const showWords = document.querySelector(".showWords")
 const button = document.querySelector(".btn");
 //const box = document.querySelector(".tick");
@@ -25,9 +26,9 @@ function wordcount() {
     let average = (sum / (count.length))
 
     if (character.length >= average) {
-        document.getElementById('desk').style.background = "#f72585";
+        document.getElementById('desk').style.background = "green";
     } else {
-        document.getElementById('desk').style.background = "#ffba08";
+        document.getElementById('desk').style.background = "orange";
     }
     return buttonMessage.innerHTML = ` Word count: ${character.length}`
 }
