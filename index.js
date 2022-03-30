@@ -26,9 +26,11 @@ function wordcount() {
     let average = (sum / (count.length))
 
     if (character.length >= average) {
-        document.getElementById('desk').style.background = "green";
+        document.getElementById('color').style.background = "green";
+        
     } else {
-        document.getElementById('desk').style.background = "orange";
+        document.getElementById('color').style.background = "orange";
+       
     }
     return buttonMessage.innerHTML = ` Word count: ${character.length}`
 }
