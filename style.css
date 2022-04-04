@@ -51,10 +51,27 @@ h1 {
     border-right: 50%;
     align-items: center;
     position: center;
+    
 }
 
 .label {
+    background-color: #f72585;
+   
+}
+.legend {
+   
+   
     background-color: green;
-    border-radius: 50%;
     
+}
+.legend2 {
+    background-color: orange;
+}
+
+.label2 {
+    background-color:yellow;
+   
+}
+table {
+    border: 1px solid black;
 }

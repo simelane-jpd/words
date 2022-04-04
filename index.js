@@ -47,7 +47,7 @@ function hide() {
         } else if (character1.length > 4) {
             if (character1.length == longestWord) {
                 arr += ` <mark style="background-color: #f72585"> ${character1}</mark>`
-            } else { arr += ` <mark style="background-color:#ffba08"> ${character1}</mark>` }
+            } else { arr += ` <mark style="background-color:yellow"> ${character1}</mark>` }
         }
     }
     return boxMessage.innerHTML = arr
@@ -76,7 +76,7 @@ function highlight() {
         if (character1.length > 4) {
             if (character1.length == longestWord) {
                 arr += ` <mark style="background-color: #f72585" > ${character1}</mark>`
-            } else { arr += ` <mark style="background-color:#ffba08" > ${character1}</mark>` }
+            } else { arr += ` <mark style="background-color:yellow" > ${character1}</mark>` }
         } else {
             arr += ` ${character1}`
         }
@@ -120,7 +120,8 @@ showWords.addEventListener('click', getWords)
 
 function getWords(word) {
     console.log(word.target.innerHTML)
-    let func = word.target.innerHTML;
+    let func = word.target.innerHTML.text;
+    console.log(func)
     const character = func.split(" ");
 
 }
